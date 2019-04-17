@@ -1,0 +1,5 @@
+This is an experiment to compare the performance of two algorithms in performing topic classifications： [Latent Dirichlet Allocation (LDA)](<https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation>) and [Non-negative Matrix Factorization (NMF)](<https://en.wikipedia.org/wiki/Non-negative_matrix_factorization>). And based on the result and my experience, here are some takeaways.
+
+1.  Generally speaking, LDA outperforms NMF on large training dataset. But there is no clear threshold above which LDA work definitely better.
+2. Sci-kit learn has the API for performing two algorithms and has both online and batch variants of LDA.
+3. LDA based on graphic models can accept raw text input, while NMF based on linear algebra requires [TF-IDF](<https://en.wikipedia.org/wiki/Tf%E2%80%93idf>) to preprocess raw texts (or bag of words). 
